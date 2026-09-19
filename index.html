@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webside.Beta</title>
+    <link rel="icon" href="Taizhi none background.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0908828f07.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<body>
+    <!--Mobile Navbar-->
+    <header class=" md:hidden mobile-navbar flex justify-center items-shadow-lg bg-white fixed top-0 left-1/36 w-full z-70 p-5 ">
+        <button class="menu-button absolute top-7" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="#" class="small-image"><img src="Taizhi none background.png" alt="Taizhi home"></a>
+        <h1 class=" display-block text-xl font-bold absolute top-23 left-1/2 transform -translate-x-1/2">TAIZHZI X LIBRARY</h1>
+        <h2 class="font-family: 'Noto Sans SC', sans-serif; font-bold absolute top-29 left-1/2 transform -translate-x-1/2">柬埔寨台知语言学校</h2>
+        
+        </section>
+
+
+        
+        <nav id="mobile-menu" class="mobile-menu absolute top-16 left-5 text-xl " aria-label="Main navigation ">
+            
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="translator.html">Translate</a>
+            <a href="#">English</a>
+              <a href="#">Chinese</a>
+              <a href="#">Pingin</a>
+                <a href="spin-wheel.html">Challenge</a>
+                
+        </nav>
+   
+    <main class="">
+        <aside class="md:hidden mobile-navbar flex justify-left fixed top-17 left-20% w-full z-70 p-50 ">
+            <h2 class=" "> 
+            
+            
+    </h2></aside>
+        <section>   </section>
+    </main>
+    <footer class="md:hidden mobile-navbar flex justify-center items-shadow-lg  fixed bottom-0 left-0 w-full z-70 p-5 ">
+        copyright © 2026 Taizhi School. All rights reserved. dv.PonleuPich
+    </footer>
+    </header>
+    <!--End Mobile Navbar-->
+    <!--Big navbar-->
+    <header class="hidden md:flex big-navbar flex justify-between items-shadow-lg bg-white fixed top-0 left-0 w-full z-70 p-5 ">
+        <div>
+            <a href="homepage.html" class=" small-image flex top-0 left-7  p-0.1 ">
+                <img src="Taizhi none background.png" alt="" loading="lazy">
+            </a>
+            <ul class="flex justify-center items-left gap-7 text-xl font-bold absolute top-5 right-5  p-2 rounded-lg text-black >
+                <li class="hover:text-blue-300"><a href="#">Translate</a></li>
+                <li class="hover:text-blue-300"><a href="#">Translate</a></li>
+                <li class="hover:text-blue-300"><a href="#">English</a>
+                <section class="dropdown__menu">
+                    <ul>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Chinese</a></li>
+                    <li><a href="#">Pingin</a></li>
+                </ul>
+            </section>
+                </li>
+                <li class="hover:text-blue-300"><a href="#">Chinese</a></li>
+            </ul>
+            <aside class="hero">
+
+            </aside>
+
+        </div>
+        <nav></nav>
+    </header>
+
+  
+    <!--end big navbar-->
+
+
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('is-open');
+            menuButton.classList.toggle('is-open', isOpen);
+            menuButton.setAttribute('aria-expanded', isOpen);
+            menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+        });
+    </script>
+</body>
+</html>
